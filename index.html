@@ -4,46 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilleaud Juliette CV</title>
+    <link rel="stylesheet" href="./assets/CSS/Style.css">
 </head>
 <body>
-    <header>
-        <img src="./assets/Images/PhotoCV.jpg" alt="Photo d'une fille blonde qui sourit" class="Photo">
-        <h1>Juliette Trilleaud</h1>
-        <h2>Développeur Web et Web Mobile</h2>
-        <p><i class="fa fa-enveloppe"></i></p>
-         
-    </header>
-    <main>
-        <div>
-            <aside>
+    <div class="container">
+
+        <!--HEADER-->
+        <header class="header">
+            <div class="Photo">
+                <img src="./assets/Images/PhotoCV.jpg" alt="Photo fille blonde qui sourit" class="Photo">
+            </div>
+
+            <div class="header-info">
+                <h1>Juliette Trilleaud</h1>
+                <h2>Développeur Web et Web Mobile</h2>
+            </div>
+            
+            <div class="contact">
+                <p><i class="fa fa-envelope"></i>Mail</p>
+                <p><i class="fa fa-phone"></i>Téléphone</p>
+                <p><i class="fa fa-home"></i>Adresse</p>
+                <p><i class="fa fa-car"></i>Permis B</p>
+            </div>
+        </header>
+
+        <main class="main">
+
+                <!--LEFT COLUMN-->
+                <aside class="sidebar">
+                    <section>
+                        <h3>Compétences</h3>
+                        <p>HTML &#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                        <p>CSS &#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                        <p>Javascript &#9733; &#9733; &#9734; &#9734; &#9734;</p>
+                        <p>PHP &#9733; &#9734; &#9734; &#9734; &#9734;</p>
+                    </section>
+
+                    <section>
+                        <h3>Langues</h3>
+                        <p>Français - Langue Maternelle</p>
+                        <p>Anglais - Professionnel</p>
+                        <p>Allemand - Notions</p>
+                    </section>
+
+                    <section>
+                        <h3>Qualités</h3>
+                        <ul>
+                            <li>Esprit d'équipe</li>
+                            <li>Autonomie</li>
+                            <li>Organisation</li>
+                            <li>Créativité</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Centres d'intérêt</h3>
+                        <ul>
+                            <li>Yoga</li>
+                            <li>Tennis</li>
+                            <li>Ecologie</li>
+                        </ul>
+                    </section>
+                </aside>
+            
+            <!--RIGHT COLUMN-->
+            <div class="content">
                 <section>
-                    <h3>Compétences</h3>
-
-                    <h3>Langues</h3>
-
-                    <h3>Qualités</h3>
-
-                    <h3>Centres d'intérêt</h3>
-                
+                    <h3>Profil</h3>
+                    <p>Hoc inmaturo interitu ipse quoque sui pertaesus excessit e vita aetatis nono anno atque vicensimo cum quadriennio imperasset.
+                        natus apud Tuscos in Massa Veternensi, patre Constantio Constantini fratre imperatoris, matreque Galla sorore Rufini et Cerealis,
+                        quos trabeae consulares nobilitarunt et praefecturae.
+                        Hoc inmaturo interitu ipse quoque sui pertaesus excessit e vita aetatis nono anno atque vicensimo cum quadriennio imperasset.
+                        natus apud Tuscos in Massa Veternensi, patre Constantio Constantini fratre imperatoris, matreque Galla sorore Rufini et Cerealis,
+                        quos trabeae consulares nobilitarunt et praefecturae.</p>
                 </section>
-            </aside>
-        </div>
-        
-        <div>
-            <section>
-                <h3>Profil</h3>
+                <section>
+                    <h3>Formations</h3>
 
-                <h3>Formations</h3>
+                    <div class="item">
+                        <span><time datetime="2023">2023</time>/<time datetime="2024">2024</time></span>
+                        <p><strong>Titre Professionnel DWWM</strong><br>centre Européen de Formation</p>
+                    </div>
 
-                <h3>Stages</h3>
+                    <div class="item">
+                        <span> <time datetime="2023-06">Juin 2023</time> - <time datetime="2023-09">Septembre 2023</time></span>
+                        <p><strong>Remise à Niveau - Métiers du numérique</strong><br>Lycée de la ville</p>
+                    </div>
 
-                <h3>Expériences Professionnelles</h3>
+                    <div class="item">
+                        <span><time datetime="1983">1983</time></span>
+                        <p><strong>BAccalauréat</strong><br>Lycée de la ville</p>
+                    </div>
+                </section>
 
-            </section>
-        </div>
-    </main>
+                <section>
+                    <h3>Stages</h3>
+
+                    <div class="item">
+                        <span><time datetime="2022-03">Mars 2022</time>-<time datetime="2022-04">Avril 2022</time></span>
+                        <p><strong>Gestionnaire de paye</strong><br>Société Truc et Machin</p> 
+                    </div>
+
+                    <div class="item">
+                        <span><time datetime="2021-01">Janvier 2021</time>-<time datetime="2021-02">Février 2021</time></span>
+                        <p><strong>Agent d'acceuil</strong><br>Mairie de la ville</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Expériences Professionnelles</h3>
+
+                    <div>
+                        <span><time datetime="2021-03">Mars 2021</time>-<time datetime="2021-07">Juillet 2021</time></span>
+                        <p><strong>Agent d'acceuil</strong><br>Mairie de la ville</p>
+                    </div>
+
+                    <div>
+                        <span><time datetime="2021-09">Septembre 2021</time>-<time datetime="2021-12">Décembre 2021</time></span>
+                        <p><Strong>Chauffeur-Livreur</Strong><br>Transport Nènès & Fils</p>
+                    </div>
+
+                    <div>
+                        <span><time datetime="2000-01">Janvier 2000</time>-<time datetime="2000-09">Septembre 2000</time></span>
+                        <p><strong>Préparateur de commandes</strong><br>Le slip français</p>
+                    </div>
+                </section> 
+            </div>
+            
+        </main>  
+    
+        <footer>
+            <p>Mis à jour le : <time datetime="2026-03-15">15/03/2026</time></p>
+        </footer>
+    </div>
+
 </body>
-<footer>
-    <p>Mis à jour le : <time datetime="">15/03/2026</time></p>
-</footer>
 </html>
