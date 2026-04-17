@@ -1,14 +1,17 @@
 
 h1 {
     font-family: "Lato", sans-serif;
+    color: #e3e3e3;
 }
 
 h2{
     font-family: "Lato", sans-serif;
+    color:#e3e3e3;
 }
 
 h3{
     font-family: "Lato", sans-serif;
+    color: #17abb3;
 }
 
 body{
@@ -62,6 +65,7 @@ body{
 .header h2{
     font-weight: bold;
     font-size: 20px;
+    padding-bottom: 5px;
 }
 
 .contact {
@@ -80,4 +84,39 @@ body{
     gap: 8px;
 }
 
+/* MAIN LAYOUT*/
 
+.main {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 30%;
+    background: #e3e3e3;
+    padding: 20px;
+}
+}
+
+.sidebar ul {
+    padding-left: 15px;
+}
+
+
+/* CONTENT */
+
+.content {
+    width: 70%;
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item span {
+    color: #17abb3;
+    font-size: 0.9em;
+}
