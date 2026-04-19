@@ -43,6 +43,11 @@ body{
     margin-left: 50px;
 }
 
+.photo:hover img {
+    transform: scale(1.2);
+    cursor: zoom-in;
+}
+
 .right-header{
     display: flex;
     flex-direction: column;
@@ -110,6 +115,15 @@ body{
     padding: 20px;
 }
 
+
+.profil p {
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5;
+}
+
+
+
 .item {
     display: flex;
     justify-content: space-between;
@@ -119,4 +133,22 @@ body{
 .item span {
     color: #17abb3;
     font-size: 0.9em;
+}
+
+/* FOOTER */
+
+footer {
+    background: #17abb3;
+    color: #e3e3e3;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .reseaux {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 45%;
+    padding-top: 20px;
 }
