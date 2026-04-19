@@ -1,16 +1,202 @@
 
 h1 {
     font-family: "Lato", sans-serif;
+    color: #ffffff;
 }
 
 h2{
     font-family: "Lato", sans-serif;
+    color:#ffffff;
 }
 
 h3{
     font-family: "Lato", sans-serif;
+    color: #17abb3;
+    font-size: 20px;
 }
 
 body{
     font-family: "Raleway", sans-serif;
+    margin: 0;
+    background: #ffffff;
+}
+
+.container{
+    width: 1160px;
+    margin: auto;
+    background: #ffffff;
+}
+
+/* HEADER */
+.header{
+    background: #17abb3;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+        /*Photo*/
+    .photo img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #ffffff;
+        margin-left: 50px;
+    }
+
+    .photo:hover img {
+        transform: scale(1.2);
+        cursor: zoom-in;
+    }
+
+        /*Titres*/
+    .right-header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+    }
+    .header-info {
+        
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+    }
+
+    .header h1{
+        margin: 0;
+        font-size: 45px;
+    }
+
+    .header h2{
+        font-weight: bold;
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+
+            /*Infos contact*/
+    .contact {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        align-items: center;
+        margin-bottom: 8px;
+        font-size: larger;
+    }
+
+    
+
+    .contact p a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .contact .left
+
+    .contact p a:hover{
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+/* MAIN LAYOUT*/
+
+.main {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 30%;
+    background: #ffffff;
+    padding: 20px;
+}
+        /*compétences*/
+    .skill {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .name {
+        width: 30px;
+    }
+
+    .stars {
+        width: 180px;
+    }
+
+        /*Langues*/
+    .language{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .level{
+        width: 180px;
+    }
+
+        /*Listes qualités et Intérêts */
+    .sidebar ul {
+        padding-left: 15px;
+    }
+
+
+/* CONTENT */
+
+.content {
+    width: 70%;
+    padding: 20px;
+}
+
+
+.profil p {
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5;
+}
+
+
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item:hover {
+    background-color: #e3e3e3;
+    border-left: 5px solid #17abb3;
+    padding-left: 7px;
+    cursor: pointer;
+}
+
+.item span {
+    color: #17abb3;
+    font-size: 0.9em;
+}
+
+/* FOOTER */
+
+footer {
+    background: #17abb3;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .reseaux {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 45%;
+    padding-top: 20px;
+}
+
+footer .reseaux .icon:hover{
+    opacity: 70%;
+    cursor: pointer;
 }
